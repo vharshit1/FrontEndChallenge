@@ -1,9 +1,17 @@
-<div class="product-container {custom_class}">
+<div class="product-container hovereffect {custom_class} col-lg-3 col-md-4 col-xs-6 thumb img-wrap" id='product_{id}'   >
+    <span class="close" onclick="closeDiv('#product_{id}');">&times;</span>
+
   <a href="{url}">
-    <img src="{image}">
+    <img class="img-responsive" src="{image}" >
+       <div class="overlay">
+           
+           <h2>{Description}</h2>
+           
+        </div>
     <div class="description">
       <div class="title">{title}</div>
       <div class="tagline">{tagline}</div>
     </div>
-  </a>
+       </a>
+ 
 </div>
